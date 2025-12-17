@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            background-color: #ffee00;
+            border: 0;
+            padding: 10px;
+            
+
+        }
+        .button:hover {
+            background-color: rgba(60, 165, 60, 0.856);
+            
+        }
+        .button:active {
+            background-color: red;
+        }
+        input:focus {
+            background-color: aqua;
+        }
+        .container .item:first-child{
+            background-color: aquamarine;
+
+        }
+        .container .item:last-child{
+            background-color: violet;
+        }
+        .container .item:nth-child(2){
+            background-color: blueviolet;
+        }
+        .container .item:nth-child(4){
+            background-color: tomato;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <!--:hover = วาง : active = คลิก : focus = โฟกัส -->
+    <input type="text">
+    <button class="button" >Goo!</button>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        
+    </div>
+    
+</body>
+</html>
