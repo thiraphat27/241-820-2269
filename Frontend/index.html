@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            Register Form "ITTRAPBOYS"
+        </div>
+        
+        <div class="flex form-input">
+            <div class="header-form">ชื่อ</div>
+            <input class="form" name="firstname" type="text" placeholder="First Name">
+        </div>
+        
+        <div class="flex form-input">
+            <div class="header-form">นามสกุล</div>
+            <input class="form" name="lastname" type="text" placeholder="Last Name">
+        </div>
+        
+        <div class="flex form-input">
+            <div class="header-form">อายุ</div> 
+            <input class="form" name="age" type="number" min="0" max="100" placeholder="Age">
+        </div>
+        
+        <div class="flex gender form-input">
+            <div class="header-form">เพศ</div> 
+            <div class="flex">
+                <div class="flex">
+                    <input name="gender" type="radio" id="male"> 
+                    <label for="male">ชาย</label>
+                </div>
+                <div class="flex">
+                    <input name="gender" type="radio" id="female"> 
+                    <label for="female">หญิง</label>
+                </div>
+                <div class="flex">
+                    <input name="gender" type="radio" id="other"> 
+                    <label for="other">อื่นๆ</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-input">
+            <div class="header-form" style="margin-bottom: 10px;">งานอดิเรก</div>
+            <div class="flex">
+                <div class="flex">
+                    <input name="interest" type="checkbox" value="อ่านหนังสือ"> Rap
+                </div>
+                <div class="flex">
+                    <input name="interest" type="checkbox" value="ดูหนัง"> Rock
+                </div>
+                <div class="flex">
+                    <input name="interest" type="checkbox" value="ฟังเพลง"> Pop
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-input">
+            <div class="header-form">คำอธิบาย</div>
+            <textarea name="description" placeholder="บอกความเป็นตัวคุณ..."></textarea>
+        </div>
+        
+        <div class="center">
+            <button onclick="submitData()" class="button">Submit</button>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
