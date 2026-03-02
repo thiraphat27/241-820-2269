@@ -127,6 +127,21 @@ input[type="radio"], input[type="checkbox"] {
     margin-top: 30px;
 }
 
+.message {
+    background-color: #3a68e8;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.message.success {
+    background-color: #07f02e;
+    color: #fff;
+ }
+ .message.danger {
+    background-color: #ff0055;
+    color: #fff;
+ }
+
 .button {
     background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
     color: #000;

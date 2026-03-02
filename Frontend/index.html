@@ -32,16 +32,14 @@
             <div class="header-form">เพศ</div> 
             <div class="flex">
                 <div class="flex">
-                    <input name="gender" type="radio" id="male"> 
-                    <label for="male">ชาย</label>
-                </div>
-                <div class="flex">
-                    <input name="gender" type="radio" id="female"> 
-                    <label for="female">หญิง</label>
-                </div>
-                <div class="flex">
-                    <input name="gender" type="radio" id="other"> 
-                    <label for="other">อื่นๆ</label>
+          <input name="gender" type="radio" id="male" value="ชาย">
+<label for="male">ชาย</label>
+
+<input name="gender" type="radio" id="female" value="หญิง">
+<label for="female">หญิง</label>
+
+<input name="gender" type="radio" id="other" value="อื่น">
+<label for="other">อื่นๆ</label>
                 </div>
             </div>
         </div>
@@ -50,13 +48,13 @@
             <div class="header-form" style="margin-bottom: 10px;">งานอดิเรก</div>
             <div class="flex">
                 <div class="flex">
-                    <input name="interest" type="checkbox" value="อ่านหนังสือ"> Rap
+                    <input name="interests" type="checkbox" value="อ่านหนังสือ"> Reading
                 </div>
                 <div class="flex">
-                    <input name="interest" type="checkbox" value="ดูหนัง"> Rock
+                    <input name="interests" type="checkbox" value="ดูหนัง"> Movie
                 </div>
                 <div class="flex">
-                    <input name="interest" type="checkbox" value="ฟังเพลง"> Pop
+                    <input name="interests" type="checkbox" value="ฟังเพลง"> Music
                 </div>
             </div>
         </div>
@@ -65,12 +63,14 @@
             <div class="header-form">คำอธิบาย</div>
             <textarea name="description" placeholder="บอกความเป็นตัวคุณ..."></textarea>
         </div>
+        <div id="message" class="message">
+        </div>
         
         <div class="center">
             <button onclick="submitData()" class="button">Submit</button>
         </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
