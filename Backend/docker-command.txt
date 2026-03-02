@@ -40,3 +40,11 @@ docker run -p 9000:80 nginx
 
 //detached mode
 docker run -p 9100:80 nginx
+
+02/02/69 MONDAY
+
+//upphp
+docker-compose up -d
+
+//shutdown
+docker-compose down
